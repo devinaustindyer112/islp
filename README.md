@@ -1,2 +1,2 @@
 # islp
-ILSP labs
+ISLP labs
