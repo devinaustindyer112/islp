@@ -1,2 +1,3 @@
 # islp
-ISLP labs
+
+Statistical learning exercises.
