@@ -1,0 +1,5 @@
+1.a. A flexible learning method would generally be worse in this scenario. since there are so few predictors for such a large set, a flexible learning method is be prone to overfitting, or creating patterns in the data that don't truly exist. Since inflexible learning methods focus just on the data at hand, it's more likely to accurately fit the true pattern in such a scenario.
+
+1.b. A flexible learning method would generally be better in this scenario. Since there are so many predictors and a large data set, the flexible model could be used to find patterns within the various data points and consider the relationship between predictors. The inflexible learning method is not able to do this and so would potentially fail to capture the nature of f, given it's inability to consider the complex relationships and patterns between predictors.
+
+1.c. 

@@ -1,18 +1,14 @@
+import pandas as pd
 import numpy as np
-from matplotlib.pyplot import subplots
-import matplotlib.pyplot as plt
 
-A = np.arange(16).reshape((4,4))
+Auto = pd.read_csv('Auto.csv', na_values=['?', '0'])
+Auto.fillna(0, inplace=True)
 
-keep_rows = np.zeros(A.shape[0], bool)
-keep_rows[[1,3]] = True
+print(Auto['horsepower'].sum())
+print(Auto.shape)
+print(Auto.columns)
 
-print(np.array([0,1,0,1]))
-print(np.array([0,1,0,1]) == keep_rows)
+idx_80 = Auto['year'] > 80
+print(Auto[idx_80])
 
-fig, ax = subplots(figsize=(4,4))
-ax.plot([1,1,0], [0,1,1])
-plt.show()
-
-# https://stackoverflow.com/questions/49944871/deactivate-a-pipenv-environment/51075851#51075851
-
+print(Auto[['horsepower', 'year']])
